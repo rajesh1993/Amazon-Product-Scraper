@@ -1,0 +1,10 @@
+import base64
+
+img_url = 'R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'
+# UjBsR09EbGhBUUFCQUlBQUFBQUFBUC8vL3lINUJBRUFBQUFBTEFBQUFBQUJBQUVBQUFJQlJBQTc=
+# iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==
+# data:image/gif;base64,
+# print(base64.b64encode(img_url).decode())
+
+with open("imageToSave.gif", "wb") as fh:
+    fh.write(base64.b64decode(img_url))
